@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <form id='tags' enctype='multipart/form-data' action='retrieval.cgi' method= 'post'>
+      What information would you like to see? Click See all Values to see eveyrthing in a table. Otherwise use the buttons below 
+      <select name="TableName">
+	<option Value="AddingMachines">Adding Machines </option>
+	<option Value="CPU">CPU </option>
+	<option Value="Computer">Computers </option>
+	<option Value="ComputerHardware">Computer Hardware </option>
+	<option Value="Location">Location </option>
+	<option Value="Manufacturer">Manufacturer </option>
+	<option Value="Miscellaneous">Miscellaneous </option>
+	<option Value="Modem">Modem </option>
+	<option Value="Monitor">Monitor </option>
+	<option Value="Printer">Printer </option>
+	<option Value="ProductionTimes">Production Times </option>
+	<option Value="Software">Software </option>
+      </select>
+      <input type= 'submit'value = "See All Values">
+    </form>
+    
+    <form method = 'post' action = 'retrieval.cgi'>
+      <br>
+      <br>
+      If you need to refresh what attributes are available for a table click "See all values" after selecting a table :) <br>
+      If you would like to see only certain values type below.(Identifiers are displayed by default) <br>
+      What attributes do you want to search on?<br>
+      <br>
+
+      <input type="radio" name="fieldName" value="AddingMachines">Adding Machines<br>
+      <input type="radio" name="fieldName" value="CPU">CPU<br>
+      <input type="radio" name="fieldName" value="Computer" checked>Computers<br>
+      <input type="radio" name="fieldName" value="Manufacturer">Manufacturer<br>
+      <input type="radio" name="fieldName" value="Location">Location<br>
+      <input type="radio" name="fieldName" value="ComputerHardware">Computer Hardware<br>
+      <input type="radio" name="fieldName" value="Miscellaneous">Miscellaneous items<br>
+      <input type="radio" name="fieldName" value="Modem">Modems<br>
+      <input type="radio" name="fieldName" value="Monitor">Monitors<br>
+      <input type="radio" name="fieldName" value="Printer">Printers<br>
+      <input type="radio" name="fieldName" value="ProductionTimes">Production Times<br>
+      <input type="radio" name="fieldName" value="Software">Software<br>
+      
+      
+      
+      What value do you want to see?
+      <input name = "restriction type = "text">
+    
+      <input type = 'submit' value= "Submit">
+      </form> 
+  </body>
+</html>

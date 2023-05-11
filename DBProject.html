@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <form id='tags' enctype='multipart/form-data' action='massupload.cgi' method= 'post'>
+      select File to upload: <input type='file' name='fileName' size='40'>
+      Keep in mind you must upload a comma separated file (CSV) file or your data entry will fail :) <br>
+      What kind of information would you like to insert?  
+      <select name="TableName">
+	<option Value="AddingMachines">Adding Machines </option>
+	<option Value="CPU">CPU </option>
+	<option Value="Computer">Computers </option>
+	<option Value="ComputerHardware">Computer Hardware </option>
+	<option Value="Location">Location </option>
+	<option Value="Manufacturer">Manufacturer </option>
+	<option Value="Miscellaneous">Miscellaneous </option>
+	<option Value="Modem">Modem </option>
+	<option Value="Monitor">Monitor </option>
+	<option Value="Printer">Printer </option>
+	<option Value="ProductionTimes">Production Times </option>
+	<option Value="Software">Software </option>
+	</select>
+      <input type= 'submit'>
+    </form>
+  </body>
+</html>
+
+    
